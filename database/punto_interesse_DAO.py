@@ -17,7 +17,8 @@ class PuntoInteresseDAO:
             return None
 
         cursor = cnx.cursor(dictionary=True)
-        query = """ SELECT * FROM punto_interesse"""
+        query = """ SELECT * 
+                    FROM punto_interesse"""
         try:
             cursor.execute(query)
             for row in cursor:

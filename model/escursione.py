@@ -8,6 +8,7 @@ class Escursione:
     costo: float
     id_parco: str
 
+
     # RELAZIONE (N:N)
     punti_interesse: set = field(default_factory=set)
 

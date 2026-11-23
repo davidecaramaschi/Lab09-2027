@@ -16,7 +16,8 @@ class EscursioneDAO:
             return None
 
         cursor = cnx.cursor(dictionary=True)
-        query = """ SELECT * FROM escursione"""
+        query = """ SELECT *
+                    FROM escursione"""
         try:
             cursor.execute(query)
             for row in cursor:
@@ -50,7 +51,8 @@ class EscursioneDAO:
             return None
 
         cursor = cnx.cursor(dictionary=True)
-        query = """ SELECT * FROM escursione_punto_interesse """
+        query = """ SELECT * 
+                    FROM escursione_punto_interesse """
         try:
             cursor.execute(query)
             for row in cursor:

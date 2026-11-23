@@ -17,7 +17,8 @@ class ParcoDAO:
             return None
 
         cursor = cnx.cursor(dictionary=True)
-        query = """ SELECT * FROM parco"""
+        query = """ SELECT * 
+                    FROM parco"""
         try:
             cursor.execute(query)
             for row in cursor:
